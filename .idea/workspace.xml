@@ -63,13 +63,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="159" />
-          <entry key="html" value="954" />
+          <entry key="html" value="995" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="159" />
-          <entry key="HTML" value="954" />
+          <entry key="HTML" value="995" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="116" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="116" />
+            <state relative-caret-position="302">
+              <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/galeria.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+            <state relative-caret-position="81">
+              <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -142,8 +142,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/galeria.html" />
       </list>
     </option>
@@ -224,16 +224,15 @@
       <workItem from="1539284881824" duration="8729000" />
       <workItem from="1539644544657" duration="2381000" />
       <workItem from="1540038735359" duration="5336000" />
-      <workItem from="1540044341154" duration="1889000" />
+      <workItem from="1540044341154" duration="2169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23015000" />
+    <option name="totallyTimeSpent" value="23295000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="676" y="0" width="697" height="735" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31868133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -248,7 +247,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32890365" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.33388704" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -301,15 +300,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="116" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="116" />
+        <state relative-caret-position="302">
+          <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/galeria.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        <state relative-caret-position="81">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
         </state>
       </provider>
     </entry>
