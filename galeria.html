@@ -47,82 +47,30 @@
 
             <div class="col s12 m3">
                 <div class="icon-block">
-                <img src="css/img/cardDog1.png">
+
+                    <a class="waves-effect waves-light orange btn modal-trigger img" href="#modal1"></a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                           <div >
+                            <img src="css/img/dog1.jpg" width="100%">
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green icone"><i class ="large material-icons">pets</i>Adotar</a>
+
+                        </div>
+                     </div>
+
+
                 </div>
             </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <img src="css/img/cardDog1.png">
-                </div>
-            </div>
-
-
-
         </div>
     </div>
 </div>
-<footer class="color-nav">
+
+<footer class="color-bk">
 
     <p id="footer">Radar Pet&copy; - Copyrigth2018 - Todos os direitos reservados.</p>
 
@@ -134,7 +82,18 @@
         $('.parallax').parallax();
         $('.button-collapse').sideNav();
     });
-</script><!-- this page is generateded by Gramateria -->
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
 
 </body>
 </html>

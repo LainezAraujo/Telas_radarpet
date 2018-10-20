@@ -148,11 +148,30 @@ footer.page-footer {
     margin-bottom: 0px;
 }
 
+
+
 /*Galeria*/
 
 .color-bk{background-color:dimgray;
 }
 
+.img{
+    background-image:url("img/cardDog1.png");
+    background-size: cover;
+    width: 172px;
+    height: 222px;
+    border: none;
+}
+img{
+    border-radius: 2%;
+}
+.icone{
+    color: green;
+
+}
+#modal1{
+    width: 30%;
+}
 /*@media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
