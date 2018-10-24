@@ -1,0 +1,32 @@
+{
+  "name": "radar_pet",
+  "version": "1.0.0",
+  "description": "Front-end do projeto Radar Pet ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LainezAraujo/Telas_radarpet.git"
+  },
+  "keywords": [
+    "Radar",
+    "Pet",
+    "TCC"
+  ],
+  "author": "J.O.N.",
+  "license": "X11",
+  "bugs": {
+    "url": "https://github.com/LainezAraujo/Telas_radarpet/issues"
+  },
+  "homepage": "https://github.com/LainezAraujo/Telas_radarpet#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
