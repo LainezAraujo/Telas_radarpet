@@ -155,13 +155,14 @@ footer.page-footer {
 .color-bk{background-color:dimgray;
 }
 
-.img{
-    background-image:url("img/cardDog1.png");
+.card{
     background-size: cover;
     width: 172px;
     height: 222px;
     border: none;
+
 }
+
 img{
     border-radius: 2%;
 }
@@ -169,24 +170,28 @@ img{
     color: green;
 
 }
-#modal1{
-    width: 30%;
+.modal1{
+    width: 25%;
 }
-/*@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-
-    }
-    #index-banner .section {
-        top: 10%;
-
-    }
+.voltar{
+    color:red;
+    border-radius: 4%;
 }
+.responsavel{
+    text-align: left;
+    background-color: dimgray;
+    color: white;
 
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0px;
 
-    }
 }
-*/
+.caracteristica{
+    background-color: lightgray;
+    text-align: left;
+
+}
+.midia{
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+
+}
