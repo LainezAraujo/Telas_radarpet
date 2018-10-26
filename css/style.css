@@ -157,9 +157,10 @@ footer.page-footer {
 
 .card{
     background-size: cover;
-    width: 172px;
+     width: 172px;
     height: 222px;
     border: none;
+
 
 }
 
@@ -168,10 +169,13 @@ img{
 }
 .icone{
     color: green;
-
+}
+.icone-topo{
+    margin-left:80%;
 }
 .modal1{
-    width: 25%;
+    width: 300px;
+    border-radius:2%;
 }
 .voltar{
     color:red;
@@ -181,6 +185,7 @@ img{
     text-align: left;
     background-color: dimgray;
     color: white;
+    margin-top:-2%;
     margin-bottom:-15px;
 
 
@@ -193,6 +198,6 @@ img{
 .midia{
     background-size: cover;
     background-position: center;
-    height: 220px;
+    height: 150px;
 
 }
