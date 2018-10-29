@@ -6,24 +6,26 @@ var browserSync = require('browser-sync').create();
 var headerfooter = require('gulp-headerfooter');
 
 // third party from /node_modules into /vendor
-gulp.task('vendor', function(){
+gulp.task('vendor', function(done){
 	// Materialize
 	gulp.src(['./node_modules/materialize-css/sass/**/*'])
 	.pipe(gulp.dest('./vendor/materialize-css/sass'));
 
 	gulp.src(['./node_modules/materialize-css/dist/js/*'])
-	.pipe(gulp.dest('./vendor/materialize-css/js'));
+	.pipe(gulp.dest('./vendor/materialize-css/js'))
+	return done();
 });
 
 
-gulp.task('materialize', ['materialize:min'], function(){
+gulp.task('materialize', function(done){
 	gulp.src(['./vendor/materialize-css/sass/**/*.scss'])
 	.pipe(sass.sync({outputStyle: 'expanded'}))
 	.pipe(gulp.dest('./vendor/materialize-css/css'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.stream())
+	return done();
 });
 
-gulp.task('materialize:min',function(){
+gulp.task('materialize:min', function(){
 	return gulp.src(['./vendor/materialize-css/css/*.css', '!./vendor/materialize-css/css/*.min.css'])
 	.pipe(rename({
 		suffix: '.min'
@@ -33,11 +35,13 @@ gulp.task('materialize:min',function(){
 	.pipe(browserSync.stream());
 })
 
-gulp.task('sass', ['css:min'], function(){
+
+gulp.task('css:compile', function(done){
 	gulp.src(['./sass/**/*.scss'])
 	.pipe(sass.sync({outputStyle: 'expanded'}))
 	.pipe(gulp.dest('./css'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.stream())
+	return done();
 });
 
 
@@ -51,11 +55,13 @@ gulp.task('css:min',function(){
 	.pipe(browserSync.stream());
 });
 
-gulp.task('partials', function () {
+gulp.task('partials', function (done) {
     gulp.src(['./partials/*.html', '!./partials/_header.html', '!./partials/_footer.html'])
         .pipe(headerfooter.header('./partials/_header.html'))
         .pipe(headerfooter.footer('./partials/_footer.html'))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.stream())
+        return done();
 });
 
 gulp.task('browserSync', function(){
@@ -64,12 +70,15 @@ gulp.task('browserSync', function(){
 	});
 });
 
-gulp.task('dev', ['sass', 'materialize', 'browserSync'], function(){
-	gulp.watch('./vendor/materialize-css/sass/**/*.scss', ['materialize']);
-	gulp.watch('./sass/**/*.scss', ['sass']);
-	gulp.watch('./partials/**/*.html', ['partials']);
+gulp.task('dev', gulp.series('partials', 'css:compile', 'css:min', 'materialize', 'materialize:min', 'browserSync'), function(){
+	gulp.watch('./vendor/materialize-css/sass/**/*.scss', gulp.series('materialize'));
+	gulp.watch('./sass/**/*.scss', gulp.series('sass'));
+	gulp.watch('./partials/*.html', gulp.series('partials'));
 	gulp.watch('./*.html', browserSync.reload);
 });
 
-gulp.task('default', ['vendor', 'materialize', 'partials']);
+
+gulp.task('default',
+	gulp.series('vendor', 'materialize', 'partials', 'materialize:min', 'css:compile', 'css:min'),
+);
 

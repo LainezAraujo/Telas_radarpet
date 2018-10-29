@@ -22,12 +22,13 @@
   },
   "homepage": "https://github.com/LainezAraujo/Telas_radarpet#readme",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
+    "materialize-css": "^1.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.10.0",
+    "gulp-headerfooter": "^1.0.3",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   }
