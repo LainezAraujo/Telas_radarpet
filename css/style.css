@@ -2,13 +2,13 @@
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: 10%;
+  background-position: inherit;
 }
 
 .scrollable-container {
   position: relative;
-  height: 600px;
-  margin-top: 40px;
+  height: 80vh;
+  margin-top: 70px;
   border-radius: 8px;
 }
 
