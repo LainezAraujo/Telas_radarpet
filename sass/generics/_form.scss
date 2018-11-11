@@ -19,8 +19,12 @@
   height: 100%;
   left: 0;
   top: 0;
-  
 }
+.form__scrollable form{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .form__footer{
   display: flex;
   justify-content: space-between;
