@@ -64,12 +64,12 @@ gulp.task('browserSync', function(){
 	});
 });
 
-gulp.task('dev', ['sass', 'materialize', 'browserSync'], function(){
+gulp.task('dev', ['sass', 'materialize', 'partials', 'browserSync'], function(){
 	gulp.watch('./vendor/materialize-css/sass/**/*.scss', ['materialize']);
 	gulp.watch('./sass/**/*.scss', ['sass']);
-	gulp.watch('./partials/**/*.html', ['partials']);
-	gulp.watch('./*.html', browserSync.reload);
+	gulp.watch('partials/**/*.html', ['partials']);
+	gulp.watch('*.html', browserSync.reload);
 });
 
-gulp.task('default', ['vendor', 'materialize', 'partials']);
+gulp.task('default', ['materialize', 'partials']);
 
