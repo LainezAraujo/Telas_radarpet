@@ -2,7 +2,7 @@
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: 10%;
+  background-position: inherit;
 }
 
 .scrollable-container {
